@@ -5,3 +5,6 @@ num2 = int(input("Enter the second number: "))
 if num1 > num2:
     #if the first number is greater than the second number, swap the two numbers
     num1, num2 = num2, num1
+    #print all the numbers between the two numbers
+for i in range(num1, num2 +1):
+    print(i)
