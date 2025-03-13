@@ -2,4 +2,5 @@
 odd_count = 0
 #set up loop to ask user for 10 numbers
 for _ in range(10):
-    input("Enter a number: ")
+    if int(input("Enter a number: ")) % 2:
+        odd_count += 1
