@@ -5,4 +5,6 @@ unique_numbers =[]
 for num in numbers:
     if num not in unique_numbers:
         unique_numbers.append(num)
+# Display the unique numbers
+print(unique_numbers)
         
