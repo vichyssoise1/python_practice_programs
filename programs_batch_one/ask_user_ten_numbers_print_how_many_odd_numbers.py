@@ -4,3 +4,4 @@ odd_count = 0
 for _ in range(10):
     if int(input("Enter a number: ")) % 2:
         odd_count += 1
+print("Odd count: ",odd_count)
