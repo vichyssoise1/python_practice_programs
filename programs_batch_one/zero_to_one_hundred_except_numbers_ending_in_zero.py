@@ -2,3 +2,5 @@
 for i in range(101):
     #add logic to skip numbers ending in 0
     if i % 10 != 0:
+        #print the result
+        print(i)
