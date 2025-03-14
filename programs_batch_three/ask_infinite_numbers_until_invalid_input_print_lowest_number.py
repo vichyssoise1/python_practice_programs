@@ -10,3 +10,8 @@ while True:
     
 if lowest is None or num < lowest:
     lowest = num
+
+if lowest is not None:
+    print("lowest number: ", lowest)
+else:
+    print("No valid numbers")
