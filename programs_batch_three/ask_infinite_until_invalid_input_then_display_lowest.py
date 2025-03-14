@@ -11,3 +11,4 @@ while True:
         break
 
 numbers.sort()
+print(numbers)
