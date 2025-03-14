@@ -9,3 +9,5 @@ while True:
         numbers.append(num)
     except ValueError:
         break
+
+numbers.sort()
