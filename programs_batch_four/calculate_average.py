@@ -9,6 +9,9 @@ while True:
         numbers.append(num)
     except ValueError:
         break
-
-# Print the numbers entered to verify input collection.
-print("Numbers entered:", numbers)
+# Calucalte the average
+if numbers:
+    average = sum(numbers) / len(numbers)
+    print("The Average is: ", average)
+else:
+    print("No valid numbers")
