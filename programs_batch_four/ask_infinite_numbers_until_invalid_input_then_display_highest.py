@@ -9,3 +9,7 @@ while True:
     except ValueError:
         # Exit the loop if the input is invalid (non-numeric).
         break
+    
+# Update 'highest' if this is the first valid input or if the current number is higher.
+if highest is None or num > highest:
+    highest = num
