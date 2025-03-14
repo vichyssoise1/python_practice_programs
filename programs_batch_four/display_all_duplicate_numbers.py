@@ -1,12 +1,14 @@
-#ask user input for a number
-numbers = int(input("Enter a number: "))
+# Ask the user to input 10 numbers and store them in a list
+numbers = [int(input("Enter a number: ")) for _ in range(10)]
 
-#empty list to store duplicates
+# Empty list to store duplicates
 duplicates = []
-#loop to check for duplicates
+
+# Loop through the list to check for duplicates
 for num in numbers:
+    # If the number appears more than once and hasn't been recorded yet, it's a duplicate
     if numbers.count(num) > 1 and num not in duplicates:
         duplicates.append(num)
 
-# Print the numbers to verify the duplicates
+# Print the duplicate numbers
 print("Duplicates are:", duplicates)
