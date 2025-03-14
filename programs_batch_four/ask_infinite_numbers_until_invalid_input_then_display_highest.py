@@ -13,3 +13,8 @@ while True:
 # Update 'highest' if this is the first valid input or if the current number is higher.
 if highest is None or num > highest:
     highest = num
+    
+if highest is not None:
+    print("Highest number: ",highest)
+else:
+    print("No valid numbers")
