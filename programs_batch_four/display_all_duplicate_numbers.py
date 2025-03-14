@@ -8,5 +8,5 @@ for num in numbers:
     if numbers.count(num) > 1 and num not in duplicates:
         duplicates.append(num)
 
-# Print the numbers to verify input collection.
-print("Numbers entered:", numbers)  
+# Print the numbers to verify the duplicates
+print("Duplicates are:", duplicates)
