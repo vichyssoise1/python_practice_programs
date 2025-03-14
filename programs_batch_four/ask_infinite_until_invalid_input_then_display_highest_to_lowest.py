@@ -9,5 +9,7 @@ while True:
     except ValueError:
         break
     
-# Print the numbers entered to verify input collection.
-print("Numbers entered:", numbers)
+numbers.sort(reverse=True)
+    
+# Print the result of numbers highest to lowest
+print("Numbers from highest to lowest:  ", numbers)
