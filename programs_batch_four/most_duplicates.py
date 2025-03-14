@@ -19,4 +19,7 @@ else:
     # Count the frequency of each number
     count = Counter(numbers)
 
-print(numbers)
+# Find the number with the most duplicates
+most_common = count.most_common(1)[0]
+# Print the number with the most duplicates
+print("The number with the most duplicates is: ", most_common[0])
