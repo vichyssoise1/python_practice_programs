@@ -1,17 +1,20 @@
-#initalize the variable
+# Initialize the variable
 lowest = None
 
-#loop infinitely until the user inputs an invalid number
+# Loop infinitely until the user inputs an invalid number
 while True:
     try:
         num = int(input("Enter a number: "))
-    except ValueError:
-        break
-    
-if lowest is None or num < lowest:
-    lowest = num
 
+        # Check if it's the lowest number
+        if lowest is None or num < lowest:
+            lowest = num
+
+    except ValueError:
+        break  # Stop the loop when input is invalid
+
+# Print the lowest number if there was at least one valid input
 if lowest is not None:
-    print("lowest number: ", lowest)
+    print("Lowest number:", lowest)
 else:
     print("No valid numbers")
